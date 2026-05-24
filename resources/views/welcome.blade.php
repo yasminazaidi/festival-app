@@ -11,7 +11,7 @@
     <body class="antialiased bg-gray-100">
         
  <nav class="bg-white shadow-sm p-4 flex justify-between items-center max-w-7xl mx-auto rounded-b-lg">
-   <div class="text-xl font-bold text-indigo-600">🎉 Festival 2026</div>
+   <div class="text-xl font-bold text-black-600">🎉 Festival 2026</div>
     <div class="space-x-4">
       <a href="{{ route('news.index') }}" class="text-gray-700 hover:text-indigo-600 font-medium">News</a>
 <a href="{{ route('faq.index') }}" class="text-gray-700 hover:text-indigo-600 font-medium">FAQ</a>
@@ -32,13 +32,13 @@
 
  <header class="max-w-7xl mx-auto mt-6 px-4">
  <div class="relative rounded-2xl overflow-hidden shadow-lg h-[450px]">
-<img src="https://image.slidesdocs.com/responsive-images/background/feather-frame-pastel-festival-wedding-white-powerpoint-background_adc743d158__960_540.jpg" alt="Festival Banner" class="w-full h-full object-cover">
+<img src="https://img.freepik.com/premium-photo/illustration-colorful-holi-paints-background-with-copy-space_360739-566.jpg" alt="Festival Banner" class="w-full h-full object-cover">
         
   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6">
      <h1 class="text-xl md:text-6xl font-extrabold text-black mb-4">Welcome to the Festival 2026!</h1>
      <p class="text-lg text-gray-200 max-w-xl mb-6">See you on July 22nd for an unforgettable open-air experience ☀️✨.</p>
        <div class="space-x-4">
-          <a href="{{ route('news.index') }}" class="bg-indigo-600 text-black font-bold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">View the News</a>
+          <a href="{{ route('news.index') }}" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">View the News</a>
               <a href="{{ route('faq.index') }}" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Frequently Asked Questions (FAQ)</a>
       </div>
       </div>
