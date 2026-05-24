@@ -14,8 +14,8 @@
    <div class="text-xl font-bold text-indigo-600">🎉 Festival 2026</div>
     <div class="space-x-4">
       <a href="{{ route('news.index') }}" class="text-gray-700 hover:text-indigo-600 font-medium">News</a>
-   <a href="{{ route('faq.index') }}" class="text-gray-700 hover:text-indigo-600 font-medium">FAQ</a>
-       <a href="{{ route('contact.show') }}" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
+<a href="{{ route('faq.index') }}" class="text-gray-700 hover:text-indigo-600 font-medium">FAQ</a>
+<a href="{{ route('contact.show') }}" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
                 
       @if (Route::has('login'))
         @auth
