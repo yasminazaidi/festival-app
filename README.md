@@ -40,10 +40,26 @@ Dit is de dynamische website gebouwd met **Laravel 13** voor het vak Backend Web
 
 Volg deze stappen om het project lokaal te draaien:
 
-1. **Dependencies installeren:**
-```bash
-   composer install
-   npm install && npm run dev 
+   # 1. Kloon het project van GitHub
+git clone <url-van-repo>
+cd festival-app
 
+# 2. Installeer de PHP- en JavaScript-dependencies
+composer install
+npm install && npm run dev
 
-   
+# 3. Configureer het omgevingsbestand (environment file)
+cp .env.example .env
+php artisan key:generate
+
+# 4. Voer de migraties uit om de tabellen te initialiseren
+php artisan migrate
+
+# 5. Start de lokale ontwikkelingsserver (development server)
+php artisan serve
+
+## Gebruik van AI
+Tijdens de ontwikkeling van dit project werd artificiële intelligentie (AI) gebruikt als ondersteunend hulpmiddel.
+ AI werd ingezet voor het opstellen en verbeteren van de documentatie,
+ het controleren en corrigeren van Engelstalige teksten
+ en het identificeren en oplossen van bepaalde bugs en fouten in de code.
