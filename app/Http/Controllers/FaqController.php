@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
-use App\Models\Category;
 use Illuminate\Http\Request;
 
 class FaqController extends Controller
@@ -11,7 +10,7 @@ class FaqController extends Controller
     // Display FAQ pages
     public function index()
     {
-        // all the faq questions and answers
+        // Retrieve all FAQ questions directly
         $faqs = Faq::all();
         return view('faq.index', compact('faqs'));
     }
@@ -25,13 +24,13 @@ class FaqController extends Controller
     // Save/Store action (Admin only)
     public function store(Request $request)
     {
-        // validation of the faq question and answer
+        // Validate only the question and the answer
         $request->validate([
             'question' => 'required|max:255',
             'answer' => 'required',
         ]);
 
-        // 
+        // Save only the question and the answer without forcing any category ID
         Faq::create([
             'question' => $request->question,
             'answer' => $request->answer,
