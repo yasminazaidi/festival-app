@@ -41,3 +41,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/faq/create', [FaqController::class, 'create'])->name('faq.create');
     Route::post('/admin/faq', [FaqController::class, 'store'])->name('faq.store');
 });
+
+use App\Http\Controllers\ContactController;
+
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
