@@ -5,7 +5,11 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-12 bg-cover bg-center bg-no-repeat" style="background-image: url('https://wallpapercave.com/wp/wp2408601.jpg');">
+         <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+         <div class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold text-white mb-2">Stay Updated with Festival 2026!</h1>
+            <p class="text-lg text-gray-300">Discover the latest news, announcements, and updates about the festival.</p>
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             {{-- Admin Button --}}
             @if(auth()->user() && auth()->user()->email === 'admin@ehb.be')

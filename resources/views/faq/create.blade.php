@@ -11,15 +11,6 @@
     <form action="{{ route('faq.store') }}" method="POST">
                     @csrf
 
-      <div class="mb-4">
-       <label for="category_id" class="block text-gray-700 font-bold mb-2">Choose a category:</label>
-      <select name="category_id" id="category_id" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-        <option value="">-- Select a category --</option>
-      @foreach($categories as $category)
-         <option value="{{ $category->id }}">{{ $category->name }}</option>
-           @endforeach
-           </select>
-         </div>
 
       <div class="mb-4">
       <label for="question" class="block text-gray-700 font-bold mb-2">Question:</label>
