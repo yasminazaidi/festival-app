@@ -32,13 +32,13 @@
 
  <header class="max-w-7xl mx-auto mt-6 px-4">
  <div class="relative rounded-2xl overflow-hidden shadow-lg h-[450px]">
-<img src="https://tse3.mm.bing.net/th/id/OIP.mRSSoL0l_J27QDdCs7t6gQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Festival Banner" class="w-full h-full object-cover">
+<img src="https://image.slidesdocs.com/responsive-images/background/feather-frame-pastel-festival-wedding-white-powerpoint-background_adc743d158__960_540.jpg" alt="Festival Banner" class="w-full h-full object-cover">
         
   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6">
-     <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">Welcome to the Festival 2026!</h1>
+     <h1 class="text-xl md:text-6xl font-extrabold text-black mb-4">Welcome to the Festival 2026!</h1>
      <p class="text-lg text-gray-200 max-w-xl mb-6">See you on July 22nd for an unforgettable open-air experience ☀️✨.</p>
        <div class="space-x-4">
-          <a href="{{ route('news.index') }}" class="bg-indigo-600 text-white font-bold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">View the News</a>
+          <a href="{{ route('news.index') }}" class="bg-indigo-600 text-black font-bold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">View the News</a>
               <a href="{{ route('faq.index') }}" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Frequently Asked Questions (FAQ)</a>
       </div>
       </div>

@@ -20,8 +20,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-
-
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 Route::get('/news/{news}', [NewsController::class, 'show'])->name('news.show');
 
