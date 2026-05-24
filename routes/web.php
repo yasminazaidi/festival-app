@@ -30,3 +30,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/news/create', [NewsController::class, 'create'])->name('news.create');
     Route::post('/admin/news', [NewsController::class, 'store'])->name('news.store');
 });
+
+use App\Http\Controllers\FaqController;
+
+// Public display
+Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
+
+// Admin management
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/faq/create', [FaqController::class, 'create'])->name('faq.create');
+    Route::post('/admin/faq', [FaqController::class, 'store'])->name('faq.store');
+});
