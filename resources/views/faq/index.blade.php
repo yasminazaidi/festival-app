@@ -8,7 +8,7 @@
     <div class="py-12">
      <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
             
-      @if(auth()->check() && auth()->user()->is_admin)
+      @if(auth()->user() && auth()->user()->email === 'admin@ehb.be')
      <div class="mb-6">
      <a href="{{ route('faq.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
        + Add FAQ Question
